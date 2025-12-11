@@ -91,6 +91,26 @@ const websiteSchema = {
   }
 };
 
+// Affiliate Disclosure Component
+function AffiliateDisclosure() {
+  return (
+    <div className="fixed bottom-0 left-0 right-0 z-40 bg-slate-950/95 backdrop-blur-sm border-t border-slate-800 py-2 px-4">
+      <div className="max-w-7xl mx-auto flex items-center justify-center gap-2 text-xs text-slate-400">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-400">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 16v-4"/>
+          <path d="M12 8h.01"/>
+        </svg>
+        <span>
+          <strong className="text-slate-300">Affiliate Disclosure:</strong> We may earn commissions from partner links.
+          Our AI-powered recommendations are personalized to your needs using the latest LLM technology.
+          <a href="/affiliate-disclosure" className="text-blue-400 hover:text-blue-300 ml-1 underline">Learn more</a>
+        </span>
+      </div>
+    </div>
+  );
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -112,6 +132,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <AffiliateDisclosure />
       </body>
     </html>
   );
