@@ -82,6 +82,105 @@ export const ROLES: Role[] = [
     keywords: ["startup AI", "business automation", "entrepreneur tools"],
     toolCategories: ["vibe-coding", "productivity", "writing"],
     targetTools: ["lovable", "shopify", "hostinger", "namecheap", "jasper", "beehiiv"]
+  },
+  {
+    slug: "developers",
+    title: "Software Developers",
+    emoji: "👨‍💻",
+    description: "Code faster and smarter with AI-powered development tools.",
+    keywords: ["developer AI tools", "code completion", "programming AI", "GitHub Copilot alternatives"],
+    toolCategories: ["vibe-coding", "productivity"],
+    targetTools: ["github-copilot", "cursor", "lovable", "bolt-new", "chatgpt", "claude"]
+  },
+  {
+    slug: "designers",
+    title: "UI/UX Designers",
+    emoji: "🎨",
+    description: "Design faster with AI-powered prototyping and generation tools.",
+    keywords: ["design AI", "UI design tools", "AI prototyping", "Figma AI"],
+    toolCategories: ["design"],
+    targetTools: ["figma-ai", "midjourney", "canva", "adobe-firefly", "runway"]
+  },
+  {
+    slug: "podcasters",
+    title: "Podcasters",
+    emoji: "🎙️",
+    description: "Record, edit, and grow your podcast with AI automation.",
+    keywords: ["podcast AI", "audio editing AI", "transcription tools"],
+    toolCategories: ["design", "productivity"],
+    targetTools: ["descript", "elevenlabs", "capcut", "beehiiv", "chatgpt"]
+  },
+  {
+    slug: "writers",
+    title: "Writers & Authors",
+    emoji: "✍️",
+    description: "Overcome writer's block and edit faster with AI writing assistants.",
+    keywords: ["AI writing tools", "author AI", "writing assistant", "grammar AI"],
+    toolCategories: ["writing"],
+    targetTools: ["chatgpt", "claude", "grammarly", "jasper", "copy-ai", "rytr"]
+  },
+  {
+    slug: "musicians",
+    title: "Musicians & Producers",
+    emoji: "🎵",
+    description: "Create, produce, and master music with AI-powered tools.",
+    keywords: ["AI music generation", "music production AI", "Suno AI"],
+    toolCategories: ["design"],
+    targetTools: ["suno", "elevenlabs", "descript", "capcut"]
+  },
+  {
+    slug: "ecommerce-sellers",
+    title: "E-commerce Sellers",
+    emoji: "🛒",
+    description: "Scale your online store with AI-powered product descriptions and marketing.",
+    keywords: ["ecommerce AI", "product description AI", "Shopify tools"],
+    toolCategories: ["productivity", "writing", "design"],
+    targetTools: ["shopify", "jasper", "copy-ai", "canva", "midjourney"]
+  },
+  {
+    slug: "consultants",
+    title: "Consultants & Coaches",
+    emoji: "💬",
+    description: "Deliver more value to clients with AI research and content tools.",
+    keywords: ["consulting AI tools", "coach productivity", "research AI"],
+    toolCategories: ["productivity", "writing"],
+    targetTools: ["perplexity", "chatgpt", "claude", "notion-ai", "grammarly"]
+  },
+  {
+    slug: "researchers",
+    title: "Academic Researchers",
+    emoji: "🔬",
+    description: "Accelerate research with AI-powered literature review and analysis tools.",
+    keywords: ["research AI", "academic AI tools", "literature review AI"],
+    toolCategories: ["productivity", "writing"],
+    targetTools: ["perplexity", "claude", "chatgpt", "notion-ai", "grammarly"]
+  },
+  {
+    slug: "social-media-managers",
+    title: "Social Media Managers",
+    emoji: "📱",
+    description: "Create engaging content at scale with AI-powered social tools.",
+    keywords: ["social media AI", "content creation AI", "scheduling tools"],
+    toolCategories: ["design", "writing"],
+    targetTools: ["canva", "jasper", "copy-ai", "capcut", "midjourney", "chatgpt"]
+  },
+  {
+    slug: "product-managers",
+    title: "Product Managers",
+    emoji: "📋",
+    description: "Ship faster with AI tools for specs, research, and prototyping.",
+    keywords: ["product management AI", "PRD generator", "user research AI"],
+    toolCategories: ["productivity", "vibe-coding"],
+    targetTools: ["notion-ai", "figma-ai", "lovable", "chatgpt", "claude", "perplexity"]
+  },
+  {
+    slug: "filmmakers",
+    title: "Filmmakers & Video Pros",
+    emoji: "🎬",
+    description: "Create professional video content with AI editing and effects tools.",
+    keywords: ["video AI", "filmmaking AI", "special effects AI", "Runway ML"],
+    toolCategories: ["design"],
+    targetTools: ["runway", "capcut", "invideo-ai", "descript", "midjourney", "suno"]
   }
 ];
 
