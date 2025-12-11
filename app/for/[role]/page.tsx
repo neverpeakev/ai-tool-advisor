@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { TOOLS, getToolBySlug, Tool } from '@/lib/tools-data';
 import { ROLES, getRoleBySlug, getAllRoleSlugs, CURRENT_YEAR } from '@/lib/seo-configs';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import SiteHeader from '@/app/components/SiteHeader';
 import {
   Star, ExternalLink, ArrowRight, CheckCircle, Sparkles,
   Users, Target, Rocket, ChevronRight
@@ -125,6 +126,9 @@ export default async function RolePage({ params }: RolePageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+
+      {/* Header */}
+      <SiteHeader />
 
       {/* Hero */}
       <div className="bg-gradient-to-b from-slate-800 to-slate-900 border-b border-slate-700">

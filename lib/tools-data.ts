@@ -556,7 +556,22 @@ export function getFeaturedTools(): Tool[] {
 }
 
 // Generate all possible comparison slugs for sitemap
+// Now generates ALL tool combinations for 200+ pSEO pages
 export function getAllComparisonSlugs(): string[] {
+  const slugs: string[] = [];
+
+  // Generate ALL tool combinations (cross-category included)
+  for (let i = 0; i < TOOLS.length; i++) {
+    for (let j = i + 1; j < TOOLS.length; j++) {
+      slugs.push(`${TOOLS[i].slug}-vs-${TOOLS[j].slug}`);
+    }
+  }
+
+  return slugs;
+}
+
+// Get same-category comparisons only (for related comparisons section)
+export function getSameCategoryComparisonSlugs(): string[] {
   const slugs: string[] = [];
   const categories = [...new Set(TOOLS.map(t => t.category))];
 
